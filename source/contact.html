@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Alex Baker's Personal Website</title>
+    <meta name='description' content='A personal website designed by and for Alex Baker'>
+    <meta name='author' content='Alex Baker'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--Favicon Info from realfavicongenerator.net-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#3ec2ff">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+    <link rel='stylesheet' type='text/css' href='./css/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='loading'></div>
+    <main class='hidden'>
+        <nav>
+            <a href='./'>About</a>
+            <a href='./portfolio.html'>Portfolio</a>
+            <a href='./contact.html'>Contact</a>
+        </nav>
+        <div class='dropContainer'>
+            <div class='drop'>
+                <h2>Email
+                    <i class='fas fa-envelope'></i>
+                </h2>
+                <div class='toDrop short'>
+                    <h4>School Related Messages:
+                        <a href='mailto:alexbaker@wustl.edu'>alexbaker@wustl.edu</a>
+                    </h4>
+                    <h4>Personal Messages:
+                        <a href='mailto:alex37454@gmail.com'>alex37454@gmail.com</a>
+                    </h4>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>LinkedIn
+                    <i class='fab fa-linkedin'></i>
+                </h2>
+                <div class='toDrop short'>
+                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light"
+                        data-vanity="alex37454">
+                        <a class="LI-simple-link" href='https://www.linkedin.com/in/alex37454?trk=profile-badge'>Alex Baker</a>
+                    </div>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>Social Media ?</h2>
+                <div class='toDrop short'>
+                    <p>I don't use social media, because I don't find them useful or fullfilling.</p>
+                </div>
+            </div>
+        </div>
+        <div id='leave'>
+            <h2>Leave a Message</h2>
+            <form id='sendEmailForm'>
+                <input type='text' maxlength='100' placeholder='Name' name='from_name' required>
+                <input type='email' maxlength='100' placeholder='Email' name='from_email' required>
+                <textarea form='sendEmailForm' placeholder='Message' name='message_text' required></textarea>
+                <input type='submit' value='Send'>
+            </form>
+            <div id='sendResult'></div>
+        </div>
+    </main>
+    <script src='./js/contact.js'></script>
+    <script src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+
+</html>

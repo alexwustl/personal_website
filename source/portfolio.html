@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Alex Baker's Personal Website</title>
+    <meta name='description' content='A personal website designed by and for Alex Baker'>
+    <meta name='author' content='Alex Baker'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--Favicon Info from realfavicongenerator.net-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#3ec2ff">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+    <link rel='stylesheet' type='text/css' href='./css/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='loading'></div>
+    <main class='hidden portfolio'>
+        <nav>
+            <a href='./'>About</a>
+            <a href='./portfolio.html'>Portfolio</a>
+            <a href='./contact.html'>Contact</a>
+        </nav>
+        <h1>My Current and Past Projects</h1>
+        <div class='dropContainer'>
+            <div class='drop'>
+                <h2>Cubic</h2>
+                <div class='toDrop short'>
+                    <p>I am a web developer at Cubic, an on campus business at Washington University in St. Louis that provides
+                        storage to students over the summer. I help maintain both the front and backend code. We host our
+                        website through AWS using serverless with DynamoDB as the backend, coupled with Angular.js on the
+                        front end.</p>
+                    <p class='linkHolder'>Link:
+                        <a href='https://storecubic.com/' target="_blank">The Cubic Website</a>
+                    </p>
+                    <div class='slideShow'>
+                        <p class='before'>&lt;</p>
+                        <img src='./images/cubic/1.png' alt="Cubic's main page">
+                        <img class='hidden' src='./images/cubic/2.png' alt="A description of Cubic's process">
+                        <p class='after'>&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>Chatter</h2>
+                <div class='toDrop short'>
+                    <p>This is a chat platform I created as part of 503S, Rapid Prototype Development and Creative Design, that
+                        I took at Washington University in St. Louis. It is based on a Node.js webserver that is also part
+                        of the project.</p>
+                    <p class='linkHolder'>Link:
+                        <a href='https://alexbaker.cf:5000' target="_blank">Chatter</a>
+                    </p>
+                    <div class='slideShow'>
+                        <p class='before'>&lt;</p>
+                        <img src='./images/chatter/1.png' alt="Several Chatter chatrooms">
+                        <img class='hidden' src='./images/chatter/2.png' alt="A different styling option">
+                        <img class='hidden' src='./images/chatter/3.png' alt="Example of using console commands">
+                        <p class='after'>&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>The Best Calendar You&apos;ve Never Used</h2>
+                <div class='toDrop short'>
+                    <p>This was another project developed for 503S and Washington University in St. Louis. It is built using
+                        PHP and MySQL.</p>
+                    <p class='linkHolder'>Link:
+                        <a href='https://alexbaker.cf/calendar/' target="_blank">The Calendar</a>
+                    </p>
+                    <div class='slideShow'>
+                        <p class='before'>&lt;</p>
+                        <img src='./images/calendar/1.png' alt="The main calendar page">
+                        <img class='hidden' src='./images/calendar/2.png' alt="Adding an event to the calendar">
+                        <img class='hidden' src='./images/calendar/3.png' alt="A notification">
+                        <p class='after'>&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>Course Listings 2.0</h2>
+                <div class='toDrop short'>
+                    <p>My final project for 503S at Washington University in St. Louis. This website is meant to allow students
+                        to more easily plan their 4-year degrees and plan their semesters</p>
+                    <p class='linkHolder'>Link:
+                        <a href='https://alexbaker.cf:4000' target="_blank">Course Listings 2.0</a>
+                    </p>
+                    <div class='slideShow'>
+                        <p class='before'>&lt;</p>
+                        <img src='./images/courseListings/1.png' alt="Creating a degree">
+                        <img class='hidden' src='./images/courseListings/2.png' alt="Adding classes to a degree">
+                        <img class='hidden' src='./images/courseListings/3.png' alt="Planning next semester">
+                        <p class='after'>&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <div class='drop'>
+                <h2>Github
+                    <i class='fab fa-github'></i>
+                </h2>
+                <div class='toDrop short'>
+                    <p class='linkHolder'>
+                        <a href='https://github.com/alexwustl' target="_blank">My Github account</a>, containing the code for these projects
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src='./js/portfolio.js'></script>
+</body>
+
+</html>
