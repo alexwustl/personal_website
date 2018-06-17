@@ -11,7 +11,7 @@ for (let item of dropDownItems) {
     toDrop[0].classList.remove("short");
     toDrop[0].parentElement.classList.add("arrowUp");
   });
-  item.addEventListener("mouseleave", function() {
+  item.addEventListener("mouseleave", function(event) {
     if (!(event.relatedTarget || event.toElement)) {
       return;
     }

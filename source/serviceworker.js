@@ -13,7 +13,7 @@ var toCache = [
   "./js/portfolio.js",
   "./css/styles.css"
 ];
-var mainCache = "personal-1";
+var mainCache = "personal-2";
 self.addEventListener("install", function(event) {
   //To immediately take over
   self.skipWaiting();
