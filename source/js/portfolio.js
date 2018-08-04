@@ -18,6 +18,18 @@ for (let item of dropDownItems) {
     toDrop[0].parentElement.classList.remove("arrowUp");
     toDrop[0].classList.add("short");
   });
+  toDrop[0].addEventListener('click',function(event){
+    event.stopPropagation();
+  });
+  item.addEventListener('click',function(event) {
+    if(toDrop[0].classList.contains('short')){
+      toDrop[0].classList.remove("short");
+      toDrop[0].parentElement.classList.add("arrowUp");
+    } else {
+      toDrop[0].parentElement.classList.remove("arrowUp");
+      toDrop[0].classList.add("short");
+    }
+  });
 }
 /*Slide show behavior*/
 let slideShows = document.getElementsByClassName("slideShow");
@@ -55,3 +67,12 @@ if ("serviceWorker" in navigator) {
     );
   });
 }
+
+//Footer
+const footer = document.createElement('footer');
+const p = document.createElement('p');
+const date = new Date();
+const year = date.getFullYear();
+p.innerText = 'Copyright © ' + year + ' Alex Baker';
+footer.appendChild(p);
+document.body.appendChild(footer);

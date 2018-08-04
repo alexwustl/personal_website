@@ -11,9 +11,10 @@ var toCache = [
   "./js/contact.js",
   "./js/index.js",
   "./js/portfolio.js",
-  "./css/styles.css"
+  "./css/styles.css",
+  "./images/personalImage.jpg"
 ];
-var mainCache = "personal-2";
+var mainCache = "personal-4";
 self.addEventListener("install", function(event) {
   //To immediately take over
   self.skipWaiting();
