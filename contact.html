@@ -16,60 +16,112 @@
     <link rel='stylesheet' type='text/css' href='./css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/fontawesomefontellofont.css">
-    </head>
-
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Bootstrap End-->
+</head>
 <body>
-    <div class='loading'></div>
-    <main class='hidden'>
-        <nav>
-            <a href='./'>About</a>
-            <a href='./portfolio.html'>Portfolio</a>
-            <a href='./contact.html'>Contact</a>
-        </nav>
-        <div class='dropContainer'>
-            <div class='drop'>
-                <h2>Email
-                    <i class="demo-icon icon-mail-alt"></i>
-                </h2>
-                <div class='toDrop short'>
-                    <h4>School Related Messages:
-                        <a href='mailto:alexbaker@wustl.edu'>alexbaker@wustl.edu</a>
-                    </h4>
-                    <h4>Personal Messages:
-                        <a href='mailto:alex37454@gmail.com'>alex37454@gmail.com</a>
-                    </h4>
-                </div>
+    <div>
+        <div class='loading'></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id='navbar'>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link pl-2" href='./'>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-2" href='./portfolio.html'>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-2" href='./contact.html'>Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class='drop'>
-                <h2>LinkedIn
-                    <i class="demo-icon icon-linkedin-squared"></i>
-                </h2>
-                <div class='toDrop short'>
-                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="alex37454">
-                        <a class="LI-simple-link" href='https://www.linkedin.com/in/alex37454?trk=profile-badge'>Alex Baker</a>
+        </nav>
+        <main class='container'>
+            <h1 class='m-3'>Contact Me!</h1>
+            <div class='accordion' id='masterAccordion'>
+                <div class='card'>
+                    <div class='card-header' id='emailHeading'>
+                        <h2 class='mb-0'>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#emailCollapse" aria-expanded="true" aria-controls="emailCollapse">
+                                Email<i class="demo-icon icon-mail-alt"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div class='collapse show' id='emailCollapse' aria-labelledby='emailHeading' data-parent="#masterAccordion">
+                        <div class='card-body'>
+                            <p class='card-text'>School related messages: <a href='mailto:alexbaker@wustl.edu' class='btn btn-primary'>alexbaker@wustl.edu</a></p>
+                            <p class='card-text'>Personal Messages: <a href='mailto:professional@alexanderjordanbaker.com' class='btn btn-primary'>professional@alexanderjordanbaker.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class='card'>
+                    <div class='card-header' id='linkedinHeading'>
+                        <h2 class='mb-0'>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#linkedinCollapse" aria-expanded="false" aria-controls="linkedinCollapse">
+                                LinkedIn<i class="demo-icon icon-linkedin-squared"></i>
+                            </button>
+                        </h2>
+                    </div>
+                    <div class='collapse' id='linkedinCollapse' aria-labelledby='linkedinHeading' data-parent="#masterAccordion">
+                        <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="alex37454">
+                            <a class="LI-simple-link" href='https://www.linkedin.com/in/alex37454?trk=profile-badge'>Alex Baker</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='card'>
+                    <div class='card-header' id='social_mediaHeading'>
+                        <h2 class='mb-0'>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#social_mediaCollapse" aria-expanded="false" aria-controls="social_mediaCollapse">
+                                Social Media ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div class='collapse' id='social_mediaCollapse' aria-labelledby='social_mediaHeading' data-parent="#masterAccordion">
+                        <div class='card-body'>
+                            <p class='card-text'>I don't use social media, because I don't find it useful or fulfilling.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class='drop'>
-                <h2>Social Media ?</h2>
-                <div class='toDrop short'>
-                    <p>I don't use social media, because I don't find them useful or fullfilling.</p>
-                </div>
+            <div class='container m-2 p-4 rounded bg-secondary text-white' id='leave'>
+                <h2 class='m-3 text-center'>Leave a Message</h2>
+                <form id='sendEmailForm'>
+                    <div class='form-group'>
+                        <label for='nameContact'>Name</label>
+                        <input type='text' class='form-control' id='nameContact' maxlength='100' placeholder='Jane Doe' name='from_name' required>
+                    </div>
+                    <div class='form-group'>
+                        <label for='emailContact'>Email</label>
+                        <input type='email' class='form-control' id='emailContact' maxlength='100' placeholder='placeholder@example.com' name='from_email' required>
+                    </div>
+                    <div class='form-group'>
+                        <label for='textContact'>Message</label>
+                        <textarea class='form-control' id='textContact' row='4' form='sendEmailForm' name='message_text' required></textarea>
+                    </div>
+                    <button type='submit' class='btn btn-primary'>Send</button>
+                </form>
+                <div id='sendResult' class='m-3'></div>
             </div>
+        </main>
+        <div id='pusherforfooter'></div>
+    </div>
+    <footer class='footer'>
+        <div class="container text-center">
+        <span class='text-muted align-middle'>Copyright © 2019 Alex Baker</span>
         </div>
-        <div id='leave'>
-            <h2>Leave a Message</h2>
-            <form id='sendEmailForm'>
-                <input type='text' maxlength='100' placeholder='Name' name='from_name' required>
-                <input type='email' maxlength='100' placeholder='Email' name='from_email' required>
-                <textarea form='sendEmailForm' placeholder='Message' name='message_text' required></textarea>
-                <input type='submit' value='Send'>
-            </form>
-            <div id='sendResult'></div>
-        </div>
-    </main>
-    <script src='./js/contact.js'></script>
+    </footer>
+    <script src='./index.js'></script>
     <script src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Bootstrap End-->
 </body>
 </html>

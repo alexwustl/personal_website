@@ -14,33 +14,63 @@
     <meta name="msapplication-TileColor" content="#9f00a7">
     <meta name="theme-color" content="#ffffff">
     <!--Favicon Info End-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Bootstrap End-->
     <link rel='stylesheet' type='text/css' href='./css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-
 <body>
-    <div class='loading'></div>
-    <main class='hidden'>
-        <nav>
-            <a href='./'>About</a>
-            <a href='./portfolio.html'>Portfolio</a>
-            <a href='./contact.html'>Contact</a>
+    <div>
+        <div class='loading'></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id='navbar'>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link pl-2" href='./'>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-2" href='./portfolio.html'>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-2" href='./contact.html'>Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div id='nameHomepage'>
-            <h1>Alex Baker</h1>
-            <h3>Computer Science and Business</h3>
+        <div id='nameHomepage' class='m-auto'>
+            <h1 class='text-center font-weight-bold'>Alex Baker</h1>
+            <h4 class='text-center'>Computer Science and Finance</h4>
         </div>
-        <section>
-            <h2>Who am I?</h2>
-            <img id='personalImage' srcset="./images/personalImage300.jpg 300w, ./images/personalImage600.jpg 600w, ./images/personalImage.jpg 1200w" sizes="(max-width: 400px) 300px,(max-width: 800px) 600px,1200px" src='./images/personalImage.jpg' alt='A personal photo'>
-            <p>I am a rising junior at Washington University in St. Louis, where I am pursing a Bachelor of Science in Computer Science with a second major in Business.</p>
-            <p> I was born in Springfield, Missouri to my parents Clate and Ann Marie Baker. I attended Central High School where I recieved my International Baccalaureate diploma. Some of my favortie activities are breaking things, learning how to fix them, and playing with my cats.</p>
-            <p>I started programming in Java in my junior year of high school, and I have loved it ever since. I have also learned html, css, javascript, and php as well as dabbling a bit in Python.</p>
-            <p>To grow my computer skills I have worked in several different capcities. First, in the summers of 2017 and 2018 I worked at Springfield Underground doing a variety of IT work. There I gained experience in networking, server management, and software design. One of the most important things I learned while working there was taking an idea from the drawing board to completion. I also work as the Senior Web Designer at Cubic LLC where I help run a student-owned business designed to help connect local residents with extra storage space to students leaving for the summer. Besides honing my web development skills, I have also appreciated the opportunity to grow my leadership and teamwork skills while working with the business.</p>
-            <p>Personally, I have also undertaken several projects. As part of 503S, Rapid Prototype Development and Creative Design, I created several websites that demonstrate some of the web development skills I have learned. These include a web chatting site, calendar, and an improved version of my university's course listings website. I have also worked with student government at Washington University to make a website showing all the printers on campus. I have also enjoyed learning more about the cloud infrastructure through designing an Alexa skill called Study Time, that interfaces with Quizlet to provide an auditory flashcard experience.</p>
-            <p>As I move forward, I am continuing to look for new ways to improve my skills, such as becoming even more proficient with Linux, discovering more ways to utilize the resources of the cloud, and beginning to explore the world of machine learning and use it to solve problems people experience every day.</p>
-        </section>
-    </main>
-    <script src='./js/index.js'></script>
+        <main class='container-fluid'>
+            <h2 class='text-center font-weight-bold'>Who am I?</h2>
+            <div class='row'>
+                <div class='container col-6'>
+                    <p>I am a rising senior at Washington University in St. Louis, where I am pursing a Bachelor of Science in Computer Science with a second major in Finance.</p>
+                    <p> I was born in Springfield, Missouri to my parents Clate and Ann Marie Baker. I attended Central High School where I recieved my International Baccalaureate diploma. Some of my favortie activities are breaking things, learning how to fix them, and playing with my cats.</p>
+                    <p>I started programming in Java in my junior year of high school, and I have loved it ever since. I have also learned html, css, javascript, and php as well as dabbling a bit in Python.</p>
+                    <p>To grow my computer skills I have worked in several different capcities. First, in the summers of 2017 and 2018 I worked at Springfield Underground doing a variety of IT work. There I gained experience in networking, server management, and software design. One of the most important things I learned while working there was taking an idea from the drawing board to completion. I also work as the Senior Web Designer at Cubic LLC where I help run a student-owned business designed to help connect local residents with extra storage space to students leaving for the summer. Besides honing my web development skills, I have also appreciated the opportunity to grow my leadership and teamwork skills while working with the business.</p>
+                    <p>Personally, I have also undertaken several projects. As part of 503S, Rapid Prototype Development and Creative Design, I created several websites that demonstrate some of the web development skills I have learned. These include a web chatting site, calendar, and an improved version of my university's course listings website. I have also worked with student government at Washington University to make a website showing all the printers on campus. I have also enjoyed learning more about the cloud infrastructure through designing an Alexa skill called Study Time, that interfaces with Quizlet to provide an auditory flashcard experience.</p>
+                    <p>As I move forward, I am continuing to look for new ways to improve my skills, such as becoming even more proficient with Linux, discovering more ways to utilize the resources of the cloud, and beginning to explore the world of machine learning and use it to solve problems people experience every day.</p>        
+                </div>
+                <img style='object-fit: contain;' class='col-6 align-self-start' id='personalImage' srcset="./images/personalImage300.jpg 300w, ./images/personalImage600.jpg 600w, ./images/personalImage.jpg 1200w" sizes="(max-width: 400px) 300px,(max-width: 800px) 600px,1200px" src='./images/personalImage.jpg' alt='A personal photo'>
+            </div>
+        </main>
+        <div id='pusherforfooter'></div>
+    </div>
+    <footer class='footer'>
+        <div class="container text-center">
+            <span class='text-muted align-middle'>Copyright © 2019 Alex Baker</span>
+        </div>
+    </footer>
+    <script src='./index.js'></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Bootstrap End-->
 </body>
 </html>
