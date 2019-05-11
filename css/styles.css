@@ -10,7 +10,7 @@ body {
     --color-1: #6b5b95;
     --color-2: #feb236;
     --color-3: #D43A5D;
-    --color-4: #3ec2ff;
+    --color-4: #007bff;
 } 
   /* Loading Bar*/
 .loading {
@@ -77,7 +77,12 @@ nav a:hover {
     font-size: 7em;
     text-shadow: 5px 5px var(--color-1);
 }
-  
+
+/*Main*/
+#personalImage {
+    border: 1em black solid;
+    object-fit: contain;
+}
 /*Portfolio*/
 .carousel-dark .carousel-control-prev,
 .carousel-dark .carousel-control-next,
