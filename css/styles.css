@@ -88,6 +88,10 @@ nav a:hover {
 .LI-badge-container-horizontal-light {
     background-color: white;
 }
+
+textarea {
+    resize: vertical;
+}
 /*Footer*/
 html, body {
     height: 100%;
